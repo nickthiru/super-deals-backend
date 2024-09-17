@@ -6,6 +6,7 @@
   },
   "scripts": {
     "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
+    "deploy": "cdk deploy --all --outputs-file outputs.json",
     "cdk": "cdk",
     "test": "jest"
   },
