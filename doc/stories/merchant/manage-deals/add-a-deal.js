@@ -38,32 +38,45 @@ BACKEND:
 
       POST /deals
 
-      Parameters:
+        Body
 
-        AddProduct_FormDetails = {
-          merchantId: string,
-          productId: string, 
-          productName: string,
-          description: string,
-          category: "Food & Drink" | "Bathroom" | "Jewelery" | "Sports" | "Tech" | "Auto" | "Entertainment" | "Travel"; required; The category this product falls under,
-          price: number,
-          stockQuantity: number,
-          images: [
-            url: string,
-            ...
-          ],
-          dateAdded: Date,
-        }
+          AddDeal_FormDetails = {
+            merchantId: string,
+            title: "Samsung 65 QLED 4K Smart TV - 2023 Model",
+            price: 899.99,
+            originalPrice: 1299.99,
+            discount: 31,
+            logo: "https://upload.wikimedia.org/wikipedia/commons/2/29/Best_Buy_Logo.svg",
+            rating: 4.7,
+            category: "Food & Drink" | "Bathroom" | "Jewelery" | "Sports" | "Tech" | "Auto" | "Entertainment" | "Travel"; required; The category this product falls under,
+            expiration: "2024-08-30"
+          }
 
-      Model?
+        Responses
+
+          200
+
+            {}
 
 
   DynamoDB
 
     Entity
 
-      Deal = 
-        
+      Deal = {
+        PK: DEAL#<DealId>,
+        SK: DEAL#<DealId>,
+        merchantId: string; required; ID of merchant who created the deal,
+        dealId: KSUID,
+        title: string; required; Title of deal,
+        originalPrice: number, required; Price of deal,
+        discount: number, required; Deal discount (to calculate final deal price),
+        logo: string; required; S3 Bucket URL of deal's logo,
+        rating: number; optional; Overall rating of deal,
+        category: "Food & Drink" | "Bathroom" | "Jewelery" | "Sports" | "Tech" | "Auto" | "Entertainment" | "Travel"; required; The category this deal falls into,
+        expiration: date; required; The expiration date of the deal,
+      }
+
 
   Lambda
 
@@ -80,7 +93,7 @@ FRONTEND:
       
         "Add a deal" form
 
-      Page server
+      Page Server
 
         Submit form
 
