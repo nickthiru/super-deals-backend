@@ -1,1 +1,8 @@
-{}
+{
+  "SuperDealsBackendStackDealsServiceStackB23F977A": {
+    "ExportsOutputFnGetAttAddDealWorkflowContructAddDealWorkflowLambda9CE5AC2FArnD6D408F3": "arn:aws:lambda:us-east-1:654654543926:function:SuperDealsBackendStackDea-AddDealWorkflowContructA-xtASkR76TFOt"
+  },
+  "SuperDealsBackendStackApiStackHttpStack6E6095F8": {
+    "RestApiEndpoint0551178A": "https://mms6a4j564.execute-api.us-east-1.amazonaws.com/prod/"
+  }
+}

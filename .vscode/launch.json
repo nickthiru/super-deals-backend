@@ -1,0 +1,23 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Local Debug",
+      "skipFiles": ["<node_internals>/**"],
+      "args": ["${relativeFile}"],
+      "env": {
+        "CONSUMER_USER_POOL_CLIENT_ID": "3017a5csm9grlgpak5j5lb05uq",
+        "AUTH_FLOW": "USER_PASSWORD_AUTH",
+        "APP_TABLE_NAME": "CdkStackDataStack432D4B2C-AppTable815C50BC-J8C3620RVL0X",
+        "WEBSOCKET_TO_WEB_CLIENT_ROUTE_QUEUE_URL": "https://sqs.us-east-1.amazonaws.com/346761569124/CdkStackApiStackWebSocketStackCA3-WebSocketToWebClientRouteQueue25A-eQlJUcN0ic2E",
+        "DEVICE_GPS_RECEIVED_TOPIC_ARN": "arn:aws:sns:us-east-1:346761569124:DeviceGpsReceived",
+        "DEVICE_GPS_RECEIVED_TOPIC_NAME": "DeviceGpsReceived"
+      }
+    }
+  ]
+}
