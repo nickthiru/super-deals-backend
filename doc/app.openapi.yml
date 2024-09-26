@@ -1,6 +1,6 @@
 openapi: "3.0.0"
 info:
-  title: Super Deals API
+  title: Super Deals
   version: "1.0"
 tags:
   - name: account
