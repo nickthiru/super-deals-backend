@@ -1,6 +1,6 @@
 openapi: "3.0.0"
 info:
-  title: Super Deals API
+  title: Super Deals
   version: "1.0"
 tags:
   - name: account
@@ -22,7 +22,7 @@ components:
         email:
           type: string
 servers:
-  - url: https://rri1nqkdad.execute-api.us-east-1.amazonaws.com/prod
+  - url: https://mms6a4j564.execute-api.us-east-1.amazonaws.com/prod/
     description: Basepath
 paths:
   /account/sign-up:
