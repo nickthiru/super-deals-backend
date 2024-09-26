@@ -14,7 +14,6 @@ files[] = {"id":"17148380-42f352b7-2ddb-409b-89f3-98696d34d4f5","path":"Super De
 [config.relations.collections.metaData]
 
 [config.relations.apiDefinition]
-files[] = {"path":"app.openapi.yml","metaData":{}}
 files[] = {"path":"doc/app.openapi.yml","metaData":{}}
 
 [config.relations.apiDefinition.metaData]
