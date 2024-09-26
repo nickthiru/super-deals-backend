@@ -43,3 +43,5 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/account"
+  /test:
+    description: Testing git branch
