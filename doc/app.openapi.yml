@@ -1,6 +1,6 @@
 openapi: "3.0.0"
 info:
-  title: App API
+  title: Super Deals API
   version: "1.0"
 tags:
   - name: account
@@ -43,3 +43,5 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/account"
+  /test:
+    description: Testing git branch
