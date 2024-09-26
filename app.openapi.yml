@@ -3,13 +3,13 @@ info:
   title: Super Deals
   version: "1.0"
 tags:
-  - name: deals
-    description: Deals service
+  - name: account
+    description: Account management service
 components:
   schemas:
-    deal:
+    account:
       type: object
-      description: A deal added by a merchant
+      description: An account represented by a Conito user pool
       required:
         - username
         - password
@@ -21,11 +21,8 @@ components:
           type: string
         email:
           type: string
-    merchant:
-      type: object
-      description: Data about merchant
 servers:
-  - url: https://mms6a4j564.execute-api.us-east-1.amazonaws.com/prod/
+  - url: https://rri1nqkdad.execute-api.us-east-1.amazonaws.com/prod
     description: Basepath
 paths:
   /account/sign-up:
@@ -46,3 +43,5 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/account"
+  /test:
+    description: Testing git branch
