@@ -46,7 +46,7 @@ BACKEND:
             originalPrice: number, required; Price of deal,
             discount: number, required; Deal discount (to calculate final deal price),
             logo: PNG/JPEG/SVG file,
-            category: "Food & Drink" | "Bathroom" | "Jewelery" | "Sports" | "Tech" | "Auto" | "Entertainment" | "Travel"; required; The category this product falls under,
+            category: "Food & Drink" | "Bathroom" | "Jewelery" | "Sports" | "Tech" | "Auto" | "Entertainment" | "Travel"; required; The category this deal falls under,
             expiration: date; required; The expiration date of the deal,
           }
 
@@ -73,15 +73,16 @@ BACKEND:
         {
           PK: DEAL#<DealId>,
           SK: DEAL#<DealId>,
-          merchantId: string; required; ID of merchant who created the deal,
-          dealId: KSUID,
-          title: string; required; Title of deal,
-          originalPrice: number, required; Price of deal,
-          discount: number, required; Deal discount (to calculate final deal price),
-          logoUrl: string; required; S3 Bucket URL of deal's logo,
-          rating: number; optional; Overall rating of deal,
-          category: "Food & Drink" | "Bathroom" | "Jewelery" | "Sports" | "Tech" | "Auto" | "Entertainment" | "Travel"; required; The category this deal falls under,
-          expiration: date; required; The expiration date of the deal,
+          EntityType: string; required, Entity type,
+          Id: KSUID,
+          Title: string; required; Title of deal,
+          OriginalPrice: number, required; Price of deal,
+          Discount: number, required; Deal discount (to calculate final deal price),
+          LogoUrl: string; required; S3 Bucket URL of deal's logo,
+          Rating: number; optional; Overall rating of deal,
+          Category: "Food & Drink" | "Bathroom" | "Jewelery" | "Sports" | "Tech" | "Auto" | "Entertainment" | "Travel"; required; The category this deal falls under,
+          Expiration: date; required; The expiration date of the deal,
+          MerchantId: string; required; ID of merchant who created the deal,
         }
 
 
