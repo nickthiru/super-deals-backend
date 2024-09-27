@@ -44,7 +44,7 @@ components:
       type: object
       description: Data about merchant
 servers:
-  - url: https://mms6a4j564.execute-api.us-east-1.amazonaws.com/prod/
+  - url: https://mms6a4j564.execute-api.us-east-1.amazonaws.com/prod
     description: Basepath
 paths:
   /merchant/deals:
