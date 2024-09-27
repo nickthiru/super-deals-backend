@@ -10,12 +10,18 @@
     "cdk": "cdk",
     "test": "jest"
   },
+  "imports": {
+    "#src/*": "./src/*.js"
+  },
   "devDependencies": {
     "aws-cdk": "2.155.0",
     "jest": "^29.7.0"
   },
   "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.658.1",
+    "@aws-sdk/util-dynamodb": "^3.658.1",
     "aws-cdk-lib": "2.155.0",
-    "constructs": "^10.0.0"
+    "constructs": "^10.0.0",
+    "ksuid": "^3.0.0"
   }
 }
