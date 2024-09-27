@@ -17,7 +17,7 @@ components:
         - discount
         - logo
         - category
-        - expiration
+        # - expiration
       properties:
         merchantId:
           type: string
@@ -37,31 +37,31 @@ components:
         category:
           type: string
           description: The category this deal falls under
-        expiration:
-          type: number
-          description: The expiration date of the deal
-    merchant:
+        # expiration:
+        #   type: number
+        #   description: The expiration date of the deal
+    Merchant:
       type: object
       description: Data about merchant
 servers:
   - url: https://mms6a4j564.execute-api.us-east-1.amazonaws.com/prod/
     description: Basepath
 paths:
-  /account/sign-up:
-    description: Consumers can sign up for an account
+  /merchant/deals:
+    description: Merchant can add a deal to his catalog
     post:
       tags:
-        - account
-      description: Submit sign up form
+        - deals
+      description: Add a new deal
       requestBody:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/account"
+              $ref: "#/components/schemas/Deal"
       responses:
         "200":
           description: Successfully signed up user
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/account"
+                $ref: "#/components/schemas/Deal"
