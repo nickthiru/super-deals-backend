@@ -46,7 +46,7 @@ BACKEND:
             originalPrice: number, required; Price of deal,
             discount: number, required; Deal discount (to calculate final deal price),
             logo: PNG/JPEG/SVG file,
-            category: "Food & Drink" | "Bathroom" | "Jewelery" | "Sports" | "Tech" | "Auto" | "Entertainment" | "Travel"; required; The category this product falls under,
+            category: "Food & Drink" | "Bathroom" | "Jewelery" | "Sports" | "Tech" | "Auto" | "Entertainment" | "Travel"; required; The category this deal falls under,
             expiration: date; required; The expiration date of the deal,
           }
 
