@@ -64,6 +64,13 @@ BACKEND:
             }
 
 
+  S3
+
+    Bucket
+
+      Logo Key
+
+
   DynamoDB
 
     Entity

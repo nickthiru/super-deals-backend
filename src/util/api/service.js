@@ -1,4 +1,4 @@
-const addCorsHeader = require("./service-method/addCorsHeader.js");
+const addCorsHeader = require("./addCorsHeader.js");
 
 module.exports = {
   addCorsHeader,
