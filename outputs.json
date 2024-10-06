@@ -1,4 +1,12 @@
 {
+  "SuperDealsBackendStackStorageStack86FF7E10": {
+    "ExportsOutputFnGetAttS3Bucket07682993Arn6D6BF9FF": "arn:aws:s3:::superdealsbackendstackstoragestac-s3bucket07682993-alwl3ttatogk",
+    "ExportsOutputRefS3Bucket07682993C02DCE6B": "superdealsbackendstackstoragestac-s3bucket07682993-alwl3ttatogk"
+  },
+  "SuperDealsBackendStackDbStackB5D45CA1": {
+    "ExportsOutputFnGetAttMainTable74195DABArnE0EC388B": "arn:aws:dynamodb:us-east-1:654654543926:table/SuperDealsBackendStackDbStackB5D45CA1-MainTable74195DAB-DPLTLV0A0881",
+    "ExportsOutputRefMainTable74195DAB4503BD7E": "SuperDealsBackendStackDbStackB5D45CA1-MainTable74195DAB-DPLTLV0A0881"
+  },
   "SuperDealsBackendStackDealsServiceStackB23F977A": {
     "ExportsOutputFnGetAttAddDealWorkflowContructAddDealWorkflowLambda9CE5AC2FArnD6D408F3": "arn:aws:lambda:us-east-1:654654543926:function:SuperDealsBackendStackDea-AddDealWorkflowContructA-xtASkR76TFOt"
   },
