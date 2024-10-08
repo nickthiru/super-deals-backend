@@ -11,7 +11,8 @@
     "test": "jest"
   },
   "imports": {
-    "#src/*": "./src/*"
+    "#src/*": "./src/*",
+    "#lib/*": "./lib/*"
   },
   "devDependencies": {
     "aws-cdk": "2.155.0",
